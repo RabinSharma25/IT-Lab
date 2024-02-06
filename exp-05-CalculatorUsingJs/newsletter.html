@@ -1,0 +1,97 @@
+<html>
+
+<head>
+
+    <title> First Class </title>
+
+</head>
+
+
+<style>
+    .fs {
+        border-radius: 8px;
+        border: 1px;
+
+        border-left: dotted;
+        border-right: dotted;
+        border-bottom: dotted;
+        border-top: solid;
+    }
+
+    input {
+        font-size: 18px;
+        border-radius: 10px;
+        margin: 4px;
+    }
+
+    td {
+        font-size: 18px;
+    }
+
+    input[type=radio] {
+        border: 0px;
+        width: 30px;
+        height: 20px;
+    }
+</style>
+
+<body bgcolor="lightgreen">
+
+
+    <fieldset class="fs">
+        <legend>My Newsletter</legend>
+        <h1>Welcome to my NewsLetter </h1>
+
+        <table>
+            <form name="myform" method="get" onsubmit="return validateform()">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="nam" placeholder="Enter your name"></td>
+                    <td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pass1" placeholder="Enter your password"></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="pass2" placeholder="confirm password"></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="mail" placeholder="Enter email id"></td>
+                </tr>
+
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="Date" name="date"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                </tr>
+
+                <tr>
+                    <td>Male</td>
+                    <td><input type="radio" name="rad"></td>
+                </tr>
+
+                <tr>
+                    <td>Female</td>
+                    <td><input type="radio" name="rad"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="register"> </td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+
+    <script src="vali.js"> </script>
+</body>
+
+</html>
