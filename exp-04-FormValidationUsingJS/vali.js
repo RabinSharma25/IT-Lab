@@ -21,6 +21,11 @@ function validateform() {
     return false;
   }
 
+  else if (!email || email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+
   else if (password1.length < 6) {
     alert("Password must be at least 6 characters long.");
     return false;
