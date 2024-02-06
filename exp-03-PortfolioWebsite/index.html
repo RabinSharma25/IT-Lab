@@ -42,13 +42,26 @@
 	border-radius:60px;
 	}
 	
-	.inline{
+	/* .inline{
 	display:inline-block;
-	}
+	} */
 	
 	#name{
-	
-	padding-bottom:300px;
+
+	padding-top: 200px;
+	padding-left: 200px;
+
+
+	}
+
+	#container{
+
+		display: flex;
+	}
+
+	#nam{
+
+		font-size: 40px;
 	}
 	</style>
 </head>
@@ -64,15 +77,16 @@
 <a href="/contact.html" class = "tag">Contact</a>
 </div>
 
-
+<div id = "container">
 <div id="photo" class = "inline">
 <img src = "rabin.png" id="rabin">
 </div>
 
 <div id="name" class = "inline">
-<h1>Rabindra Sharma</h1>
+<h1 id="nam">Rabindra Sharma</h1>
 <p>Associate Backend Developer</p>
 <button type = "submit" onclick = "alert('Downloading')" >Download Resume</button>
+</div>
 </div>
 
 
