@@ -1,0 +1,70 @@
+<html>
+<head>CALcu</head>
+<title>CALcu</title>
+
+<body>
+
+value1: <input type="number"id="n1"maxlimit="20">
+value2: <input type="number"id="n2"maxlimit="20">
+
+Result:<input type="Number"id="r"maxlimit="20">
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="div()">div</button>
+<button onclick="mul()">mul</button>
+
+<script>
+	
+var a,b,r;
+
+function add(){
+
+	a=parseInt(document.getElementById("n1").value)
+	b=parseInt(document.getElementById("n2").value)
+	r=a+b;
+	document.getElementById("r").value=r;
+	
+
+
+}
+
+function sub(){
+
+	a=parseInt(document.getElementById("n1").value)
+	b=parseInt(document.getElementById("n2").value)
+	r=a-b;
+	document.getElementById("r").value=r;
+	
+
+
+}
+
+
+function div(){
+
+	a=parseInt(document.getElementById("n1").value)
+	b=parseInt(document.getElementById("n2").value)
+	r=a/b;
+	document.getElementById("r").value=r;
+	
+
+
+}
+
+function mul(){
+
+	a=parseInt(document.getElementById("n1").value)
+	b=parseInt(document.getElementById("n2").value)
+	r=a*b;
+	document.getElementById("r").value=r;
+	
+
+
+}
+
+</script>
+
+</body>
+
+</html>
